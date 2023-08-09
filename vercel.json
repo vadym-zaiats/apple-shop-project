@@ -1,0 +1,14 @@
+{
+  "buildCommand": "cd ./client && npm run build",
+  "installCommand": "cd ./client && npm install -g --legacy-peer-deps install-peerdeps && npx install-peerdeps --dev eslint-config-airbnb && npx install-peerdeps --dev eslint-config-airbnb-base",
+  "outputDirectory": "./client/dist",
+  "version": 2,
+
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/server.js"
+    }
+  ]
+}
+
